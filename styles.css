@@ -4,13 +4,15 @@ body {
     padding: 0;
     background-color: #f0f9f4; /* Helles Pastellgrün */
     color: #2c3e50; /* Dunkles Grau für den Text */
+    display: flex;
 }
 
 header {
     background: #4caf50; /* Dunkleres Pastellgrün */
     color: #fff;
-    padding: 20px 0;
-    text-align: center;
+    padding: 20px;
+    text-align: left;
+    width: 200px; /* Breite der Navigation */
 }
 
 nav {
@@ -18,7 +20,8 @@ nav {
 }
 
 nav a {
-    margin: 0 15px;
+    display: block; /* Links als Blockelemente */
+    margin: 10px 0; /* Abstand zwischen den Links */
     color: #fff;
     text-decoration: none;
     font-weight: bold;
@@ -26,6 +29,11 @@ nav a {
 
 nav a:hover {
     text-decoration: underline;
+}
+
+main {
+    flex-grow: 1; /* Nimmt den restlichen Platz ein */
+    padding: 20px;
 }
 
 section {
