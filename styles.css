@@ -1,13 +1,14 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #e9ecef;
+    color: #343a40;
 }
 header {
-    background: #007BFF;
+    background: #6c757d;
     color: #fff;
-    padding: 10px 0;
+    padding: 20px 0;
     text-align: center;
 }
 nav {
@@ -17,19 +18,27 @@ nav a {
     margin: 0 15px;
     color: #fff;
     text-decoration: none;
+    font-weight: bold;
+}
+nav a:hover {
+    text-decoration: underline;
 }
 section {
     padding: 20px;
     background: #fff;
     margin: 10px;
     border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 footer {
     text-align: center;
     padding: 10px 0;
-    background: #007BFF;
+    background: #6c757d;
     color: #fff;
     position: relative;
     bottom: 0;
     width: 100%;
+}
+h1, h2 {
+    margin: 0;
 }
