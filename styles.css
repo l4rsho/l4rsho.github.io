@@ -44,16 +44,6 @@ section {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-footer {
-    text-align: center;
-    padding: 10px 0;
-    background: #4caf50; /* Dunkleres Pastellgrün */
-    color: #fff;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-}
-
 h1, h2 {
     margin: 0;
 }
