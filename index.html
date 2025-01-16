@@ -3,27 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Triathlon Club Ludenberg</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Login-Seite</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+        }
+        .login-container {
+            background: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        input {
+            margin: 10px 0;
+            padding: 10px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        button {
+            padding: 10px;
+            width: 100%;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        .message {
+            margin-top: 20px;
+            color: red;
+        }
+    </style>
 </head>
 <body>
 
-<header>
-    <h1>Triathlon Club Ludenberg</h1>
-    <nav>
-        <a href="index.html">Infos</a>
-        <a href="termine.html">Termine</a>
-        <a href="aktuelles.html">Aktuelles</a>
-        <a href="wettkaempfe.html">Wettkämpfe</a>
-    </nav>
-</header>
+<div class="login-container">
+    <h2>Login</h2>
+    <input type="text" id="username" placeholder="Benutzername" required>
+    <input type="password" id="password" placeholder="Passwort" required>
+    <button onclick="login()">Einloggen</button>
+    <div class="message" id="message"></div>
+</div>
 
-<main>
-    <section id="infos">
-        <h2>Über uns</h2>
-        <p>Der Triathlon Club Ludenberg ist ein engagierter Verein, der sich der Förderung des Triathlonsports widmet. Wir bieten Training für alle Altersgruppen und Leistungsniveaus an und organisieren regelmäßig Veranstaltungen und Wettkämpfe.</p>
-    </section>
-</main>
+<script>
+    function login() {
+        const username = document.getElementById('username').value;
+        const password = document.getElementById('password').value;
+        const message = document.getElementById('message');
+
+        if (username === 'admin' && password === 'qwerasd') {
+            message.style.color = 'green';
+            message.innerText = 'Erfolgreich eingeloggt!';
+        } else {
+            message.style.color = 'red';
+            message.innerText = 'Benutzername oder Passwort ist falsch!';
+        }
+    }
+</script>
 
 </body>
 </html>
